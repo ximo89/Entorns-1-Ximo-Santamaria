@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+</head>
+
+<body>
+    <h1>Rellena tu CV</h1>
+    <form method="post" action="procesaCurriculum.php">
+    <label for="Nombre">Nombre</label><br>
+    <input type="text" id="Nombre" name="Nombre" required>
+    <br>
+    <label for="Apellidos">Apellidos</label><br>
+    <input type="text" id="Apellidos" name="Apellidos" size="40" required>
+    <br>
+    <label for="A&ntilde;o nacimiento">Año de nacimiento</label><br>
+    <input type="date" name="A&ntilde;o nacimiento" id="A&ntilde;o nacimiento">
+    <br>
+    <label for="Contrase&ntilde;a">Contraseña</label><br>
+    <input type="password" id="Contraseña" name="Contraseña" required>
+    <br>
+    <label for="DNI">DNI</label><br>
+    <input type="text" id="DNI" name="DNI" required maxlength="9">
+    <br>
+    <label for="tel">Teléfono</label><br>
+    <input type="tel" id="tel" name="tel" required>
+    <br>
+    <label for="Sexo">Sexo</label><br>
+    <input type="radio" name="Sexo" value="Hombre">Hombre <br>
+    <input type="radio" name="Sexo" value="Mujer">Mujer
+    <p></p>
+    <label for="email">email</label><br>
+    <input type="email" id="email" name="email" required>
+    <p></p>
+    <label for="foto">Incluir mi foto</label>
+    <input type="file" id="foto" name="foto">
+    <p></p>
+    <input type="checkbox" name="boletin" id="boletin">Suscribirme al boletín de novedades
+    <p></p>
+    <input type="submit" value="Guardar cambios" name="Guardar cambios" id="Guardar cambios">
+    <input type="reset" value="Borrar datos introducidos" name="Borrar datos introducidos" id="Borrar datos introducidos">
+    </form>
+</body>
+</html>
